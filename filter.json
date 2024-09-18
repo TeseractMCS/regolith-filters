@@ -1,0 +1,10 @@
+{
+    "description": "Compiles scripts into a behavior and resource pack, including teseract api.",
+    "filters": [
+        {
+            "name": "Compiling teseract api",
+            "runWith": "nodejs",
+            "script": "./build/index.js"
+        }
+    ]
+}
