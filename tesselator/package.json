@@ -13,5 +13,12 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.5.5"
+  },
+  "dependencies": {
+    "esbuild-decorators": "^1.0.0",
+    "glob": "^11.0.0",
+    "json5": "^2.2.3",
+    "esbuild": "^0.23.1",
+    "esbuild-loader": "^4.2.2"
   }
 }
