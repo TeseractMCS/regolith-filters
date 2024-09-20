@@ -1,11 +1,11 @@
-// @ts-check
 import JSON5 from "json5";
+import path from "path";
 import { build } from "esbuild";
 import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { esbuildDecorators } from "esbuild-decorators";
-import path from "path";
 import { ParseModule } from "./util/ParseModule.js";
 import { randomUUID } from "crypto";
+const settings = process.argv[2] ? JSON.parse(process.argv[2]) : {};
 // Change the current working directory to the root directory where config.json exists; this file is supposed to always exist, as the filter is running inside .regolith/tmp folder
 process.chdir("../../");
 // Get the regolith config file and parse it to JSON
@@ -72,7 +72,7 @@ class Tesselator {
         build({
             entryPoints: ["data/index.ts"],
             bundle: true,
-            // minify: true,
+            minify: settings.minify ?? false,
             outfile: "BP/scripts/index.js",
             platform: "node",
             target: "es2020",
@@ -155,5 +155,4 @@ class Tesselator {
     }
 }
 Tesselator.start();
-//# sourceMappingURL=v2.0.0.js.map
 //# sourceMappingURL=index.js.map
