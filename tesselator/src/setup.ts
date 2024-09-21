@@ -63,6 +63,6 @@ const main = () => {
 
     installDependencies(tesselatorPath);
 };
-
+console.warn("Test")
 // Run the main function
 main();
