@@ -6,5 +6,6 @@
             "runWith": "nodejs",
             "script": "./build/index.js"
         }
-    ]
+    ],
+    "requirements": "."
 }
