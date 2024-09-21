@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "postinstall": "node ./build/setup.js",
+    "postinstall": "echo \"Test: this is actually running\" && node ./build/setup.js",
     "clean": "rmdir /s /q build",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
