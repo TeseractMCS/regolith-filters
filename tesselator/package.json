@@ -2,7 +2,6 @@
   "name": "@teseractmcs/sculk-tesselator",
   "version": "2.0.0",
   "type": "module",
-  "main": "out/index.js",
   "scripts": {
     "postinstall": "node ./build/setup.js",
     "clean": "rmdir /s /q build",
