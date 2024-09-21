@@ -53,6 +53,7 @@ const main = () => {
     const tesselatorPath = path.resolve(rootDir, dataPath, "tesselator");
     installDependencies(tesselatorPath);
 };
+console.warn("Test");
 // Run the main function
 main();
 //# sourceMappingURL=setup.js.map
