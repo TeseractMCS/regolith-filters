@@ -4,6 +4,7 @@
   "type": "module",
   "main": "out/index.js",
   "scripts": {
+    "postinstall": "node ./build/setup.js",
     "clean": "rmdir /s /q build",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
