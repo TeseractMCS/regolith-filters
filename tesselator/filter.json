@@ -4,8 +4,8 @@
         {
             "name": "Compiling teseract api",
             "runWith": "nodejs",
-            "script": "./build/index.js"
+            "script": "./build/index.js",
+            "requirements": "."
         }
-    ],
-    "requirements": "."
+    ]
 }
