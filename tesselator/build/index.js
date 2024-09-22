@@ -7,7 +7,7 @@ import { ParseModule } from "./util/ParseModule.js";
 import { randomUUID } from "crypto";
 const settings = process.argv[2] ? JSON.parse(process.argv[2]) : {};
 // Change the current working directory to the root directory where config.json exists; this file is supposed to always exist, as the filter is running inside .regolith/tmp folder
-process.chdir("../../");
+process.chdir(process.env.ROOT_DIR);
 // Get the regolith config file and parse it to JSON
 const regolithConfig = JSON5.parse(readFileSync("config.json").toString());
 /**
@@ -68,7 +68,6 @@ class Tesselator {
     }
     static build() {
         process.chdir(regolithTmp);
-        console.info(process.cwd());
         build({
             entryPoints: ["data/index.ts"],
             bundle: true,
