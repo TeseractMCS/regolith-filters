@@ -1,9 +1,8 @@
 {
   "name": "@teseractmcs/sculk-tesselator",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "type": "module",
   "scripts": {
-    "postinstall": "echo \"Test: this is actually running\" && node ./build/setup.js",
     "clean": "rmdir /s /q build",
     "build": "npm run clean && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
