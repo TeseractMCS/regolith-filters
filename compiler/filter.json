@@ -1,0 +1,11 @@
+{
+    "description": "Compiler & exporter for Vermillion Productions' bedrock development environment.",
+    "filters": [
+        {
+            "name": "Vermillion Productions' Compiler",
+            "runWith": "nodejs",
+            "script": "./main.js",
+            "requirements": "./"
+        }
+    ]
+}

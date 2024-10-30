@@ -1,0 +1,11 @@
+{
+    RP: {
+        header: '1a2b2a4a-2c0f-4e73-ad3e-0223647d23d1',
+        resources: '062254f7-631c-4450-a85e-4b7fdcf52a8f',
+    },
+    BP: {
+        header: '895f3494-9285-40bb-ae29-e156b9e4ccf4',
+        data: 'a5c2f9d9-bb3b-44c1-99fc-8103dbb4ed4c',
+        script: '40d6341f-e46a-4577-9535-634fe6d50036',
+    },
+}
